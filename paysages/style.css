@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.uneGrandeBoite{
+    display: flex;
+}
+
+
+.petiteBoite{
+    flex: 1;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction : column;
+    justify-content: space-around;
+    align-items : center;
+    overflow: hidden;
+}
+
+.monter{
+    transform: translateY(-500px);
+    transition: transform 1.5s ease-in-out;
+    opacity: 0;
+}
+
+.petiteBoite:hover >.monter{
+    transform: translateY(0);
+    opacity: 100%;
+}
+
+.descendre{
+    transform: translateY(500px);
+    transition: transform 1.5s ease-in-out;
+    opacity: 0;
+}
+
+.petiteBoite:hover >.descendre{
+    transform: translateY(0);
+    opacity: 100%;
+}
+
+
+.mer{
+    background-image: url('images/paysage2.jpg');
+    transition: 1s ease-in;
+}
+
+.mer:hover{
+    flex: 3;
+}
+
+
+.etoiles{
+    background-image: url('images/paysage5.jpg');
+    transition: 1s ease-in;
+}
+
+.etoiles:hover{
+    flex: 3;
+}
+
+
+.prairie{
+    background-image: url('images/paysage4.jpg');
+    transition: 1s ease-in;
+}
+
+.prairie:hover{
+    flex: 3;
+}
+
+
+.ville{
+    background-image: url('images/paysage1.jpg');
+    transition: 1s ease-in;
+}
+
+.ville:hover{
+    flex: 3;
+}
+
+
+.montagne{
+    background-image: url('images/paysage3.jpg');
+    transition: 1s ease-in;
+}
+.montagne:hover{
+    flex: 3;
+}
+
+
+p{
+    color: white;
+    font-weight: bolder;
+    text-transform: uppercase; 
+    font-size: 2.2em;
+    font-family: 'Zen Dots', cursive;
+}
+
+.rond{
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.692);
+    opacity: 50%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height .5s, width .5s, opacity .5s;
+}
+
+.rond:hover{
+    cursor: pointer;
+
+    height: 70px;
+    width: 70px;
+    opacity: 90%;
+}
+
+/*version mobile*/
+
+@media only screen and (max-width: 920px) {
+    .uneGrandeBoite{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .petiteBoite{
+        height: 100vh;
+        background-size: cover;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items : center;
+        overflow-x: hidden;
+    }
+    
+    .monter{
+        transform: translate(-500px, -100px);
+        transition: transform 1.5s ease-in-out;
+        opacity: 0;
+        
+    }
+    
+    .petiteBoite:hover >.monter{
+        transform: translateX(0);
+        opacity: 100%;
+        
+    }
+    
+    .descendre{
+        transform: translate(500px, -100px);
+        transition: transform 1.5s ease-in-out;
+        opacity: 0;
+        
+    }
+    
+    .petiteBoite:hover >.descendre{
+        transform: translateX(0);
+        opacity: 100%;
+        
+    }
+
+    p{
+        color: white;
+        font-weight: bolder;
+        text-transform: uppercase; 
+        font-size: 3em;
+        font-family: 'Zen Dots', cursive;
+    }
+    
+    .rond{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: height .5s, width .5s, opacity .5s;
+        background-image: linear-gradient(rgba(41, 38, 38, 0.438), rgba(87, 87, 85, 0.5));
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+       7px 7px 20px 0px rgba(0,0,0,.1),
+       4px 4px 5px 0px rgba(0,0,0,.1);
+    }
+    
+    .rond:hover{
+        cursor: pointer;
+    
+        height: 120px;
+        width: 120px;
+        background-image: linear-gradient(rgba(252, 252, 252, 0.171), rgba(87, 87, 85, 0.199))
+    }
+}

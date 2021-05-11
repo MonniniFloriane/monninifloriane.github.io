@@ -1,0 +1,19 @@
+.maPage{
+    overflow: hidden;
+}
+
+.veloBlanc{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('tandemblanc1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.veloBleu{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('tandembleu1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

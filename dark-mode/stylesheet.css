@@ -1,0 +1,56 @@
+body{
+    
+    font-size: 500%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    background-color: #FFAB79;
+    background-image:url(SVG/Mesa%20de%20trabajo%201.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    color: #FFAB79;
+    text-shadow: 5px 5px 0px #26203A;
+    transition: 350ms;
+    margin-top: 18%;
+
+}
+
+.nuit{
+
+    background-color: #26203A;
+    background-image: url(SVG/Artboard%201.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    color: #26203A;
+    text-shadow: 5px 5px 0px #FFAB79;
+
+}
+
+p {
+    
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 50%;
+    color: #26203A;
+    margin-top: -8%;
+    text-shadow: 3px 3px 0px #FFAB79;
+}
+
+.nuit p {
+    
+    color: #FFAB79;
+    transition: 350ms ease-in-out;
+    text-shadow: 3px 3px 0px #26203A;
+}
+
+p:hover {
+    
+    text-shadow: 3px 3px 0px aqua;
+    transition: 350ms ease-in-out;
+}
+
+.nuit p:hover {
+    
+    text-shadow: 3px 3px 0px purple;
+    transition: 350ms ease-in-out;
+}

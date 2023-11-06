@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+
+        <title>Test dark mode</title>
+        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    </head>
+
+    <body>
+
+        <h1>AURORE</h1>
+        <div onclick="myFunction()">
+            <p>CLIC ME</p>
+        </div>
+
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("nuit");
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rvb-daltonisme</title>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png"/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <!--bar de nav-->
+        <header>
+        <nav>
+                <ul>
+                    <li><a href="#home"
+                           alt="Accueil"
+                           title="Accueil">
+                           <img class="logo" src="image/home.svg"/>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#daltonisme"
+                           alt="Daltonisme">
+                           DALTONISME
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#palettes"
+                           alt="Palettes">
+                           PALETTES
+                        </a>
+                    </li> 
+
+                    <li>
+                        <a href="#don"
+                           alt="Faire un don">
+                           FAIRE UN DON
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#contact"
+                           alt="Contact">
+                           CONTACT
+                        </a>
+                    </li>
+
+                    <li class="pictoDark">
+                        <a href="boutons dark mode"
+                           alt="Dark/Light Mode"
+                           title="Dark/Light Mode">
+                           <img class="pictoDark" src="image/moon.svg"/>
+                        </a>
+                    </li>
+                </ul>
+            
+        </nav>
+        </header>
+
+        <!--accueil-->
+        <main>
+        <div id="home">
+            <div class="uneGrandeBoite">
+                
+                <div class="petiteBoiteTitle title">
+                    <h1>RVB</h1>
+                    <h2>DALTO<br>NISME</h2>
+                    
+                        <a href="icones flêche"
+                           title="Cliquer pour voir les teintes">
+                           <img class="iconeClic" src="image/cursor-bold.svg"/>
+                        </a>
+                    
+                    <h3 style="text-align: center;"><strong>toucher les couleurs</strong></h3>
+
+                        <a href="icones eyes"
+                            title="Une nouvelle pallette chaque semaines">
+                            <img class="iconeEye" src="image/eye.svg"/>
+                            </a>
+
+                    <h4 style="text-align: center;">Une nouvelle palette chaque semaines</h4>
+                </div>
+
+                <div class="petiteBoite colorOne" id="laMer" data-description="MINDNIGHTBLUE" 
+                data-couleur="#191970">
+                </div>
+
+                <div class="petiteBoite colorTwo" 
+                data-description="MINDNIGHTBLUE" 
+                data-couleur="#191970">
+                </div>
+
+                <div class="petiteBoite colorThree" 
+                data-description="MINDNIGHTBLUE" 
+                data-couleur="#191970"></div>
+
+                <div class="petiteBoite colorFor" 
+                data-description="MINDNIGHTBLUE" 
+                data-couleur="#191970"></div>
+                
+                
+                </div>
+ 
+            </div>
+        
+        <!--daltonisme-->
+        <section id="daltonisme">
+            <div class="sousTitre">
+                <a href="icones volume titre"
+                   alt="Cliquer pour entendre"
+                   title="Cliquer pour entendre">
+                   <img src="image/volume-2.svg"/>
+                </a>
+                <h2>LE DALTONISME</h2>
+                <h3>nom masculin (de J. Dalton, nom propre)</h3>
+            </div>
+            
+            <div class="texte">
+                <p>Trouble héréditaire de la vision des couleurs, notamment du rouge et du vert.</p>
+                <h4>LE LARROUSE</h4>
+            </div>
+            
+            <div class="grandeBoiteColor">
+                <div class="petiteBoiteColor">
+                    <div class="degrader" id="norm"></div>
+                    <h3 class="titreColor">vission normale</h3>
+                    <p class="texteCl">cyan/magenta/jaune/noir</p>
+                </div>
+                
+                <div class="petiteBoiteColor">
+                    <div class="degrader" id="deut"></div>
+                    <h3 class="titreColor">Deutéranopie</h3>
+                    <p class="texteCl">Anomalie du cône vert</p>
+                </div>
+                
+                <div class="petiteBoiteColor">
+                    <div class="degrader" id="pro"></div>
+                    <h3 class="titreColor">Protanopie</h3>
+                    <p class="texteCl">Anomalie du cône rouge</p>
+                </div>
+                
+                <div class="petiteBoiteColor">
+                    <div class="degrader" id="tri"></div>
+                    <h3 class="titreColor">Tritanopie</h3>
+                    <p class="texteCl">Anomalie du cône bleu</p>
+                </div>
+            </div>
+            
+        
+        </section>
+        
+        <!--palettes-->
+        <section id="palettes">
+            <div class="sousTitre">
+                <a href="icones volume titre"
+                   alt="Cliquer pour entendre"
+                   title="Cliquer pour entendre">
+                   <img src="image/volume-2.svg"/>
+                </a>
+                <h2>palettes</h2>
+                <h3> choisissez votre couleurs ont s’occupe du reste</h3>
+            </div>
+            
+            <!--recherche par couleurs-->
+            
+            <div class="recherche">
+                    <button class="button">
+                        <div class="blue" id="boite"></div>
+                        <p>blue</p>
+                    </button>
+                
+                    <button class="button">
+                        <div class="green boite" ></div>
+                        <p>green</p>
+                    </button>
+                
+                    <button class="button">
+                        <div class="yellow boite" ></div>
+                        <p>yellow</p>
+                    </button>
+                
+                    <button class="button">
+                        <div class="orange boite"></div>
+                        <p>orange</p>
+                    </button>
+                
+                    <button class="button">
+                        <div class="red boite" ></div>
+                        <p>red</p>
+                    </button>
+                
+                    <button class="button">
+                        <div class="white boite" ></div>
+                        <p>white</p>
+                    </button>
+                
+                    <button class="button">
+                        <div class="black boite" ></div>
+                        <p>black</p>
+                    </button>
+            </div>
+            
+            <!--resultat de la recherche-->
+            
+            <div class="grandeBoiteNuance">
+                <div class="boiteNuance">
+                    <div class="midnightBlue"></div>
+                    <div class="rose boite2" ></div>
+                    <div class="blue boite2" ></div>
+                    <div class="violet boite2" ></div>
+                </div>
+                
+                <div class="textNuance"><p class="center">midnight blue</p></div>
+            </div>
+            
+        
+        </section>
+        
+        <!--don-->
+        
+        <section class="don" id="don">
+                <div class="sousTitre">
+                    <a href="icones volume titre"
+                       alt="Cliquer pour entendre"
+                       title="Cliquer pour entendre">
+                       <img src="image/volume-2.svg"/>
+                    </a>
+                    <h2>faite un don</h2>
+                    <h3>pour la bonne cause</h3>
+                </div>
+            
+                <div class="texte">
+                    <p><strong>L’ARRADV</strong>est une association de professionnels de la déficience visuelle à but non lucratif, reconnue d’intérêt général, habilitée à recevoir des dons ouvrant droit à réduction fiscale (articles 200.-1.b et 238 bis.-1 du CGI).</p>
+                </div>
+            
+                <div class="assos">
+                    <a href="https://www.arradv.fr/nous-soutenir/"
+                       target="_blank" 
+                       alt="Logo ARRADV"
+                       title="Site ARRADV">
+                       <img src="image/assos.png">
+                    </a>
+            </div>
+        </section>
+            
+        </main>
+        
+        <!--footer-->
+        
+        <footer class="footer" id="contact">
+            <contact class="elemContact">
+                 <ul>
+                    <li>
+                        <a href="https://www.figma.com/file/Xa4yNtn6rylihg8iQZT0bK/template-test?type=design&node-id=502%3A36&mode=design&t=Hg1KKGt4idVC9gCy-1" 
+                        target="_blank" 
+                        alt="Logo Portfolio"
+                        title="Portfolio">
+                        <img class="logo2" src="image/logo-noir.svg"/>
+                        </a>
+                     </li>
+
+                    <li><strong>•monnini floriane•</strong>designer / développeur web</li>
+
+                    <li>
+                        <a 
+                        href="tel:0781984380" 
+                        alt="Téléphone:"
+                        title="Téléphone">
+                        <img id="tel" src="image/phone.svg"/>
+                        07 81 98 43 80
+                        </a>
+                     </li>
+
+                    <li class="picto">   
+                        <a href="https://www.instagram.com/mf_webcreations/" 
+                        target="_blank" 
+                        alt="Instagram"
+                        title="Instagram">  
+                        <img class="picto1 picto-lg "  
+                        src="image/icon%20_instagram_.svg"/>
+                        </a>
+                        
+                        <a
+                           href="https://github.com/MonniniFloriane/monninifloriane.github.io"
+                        target="_blank" 
+                        alt="GitHub"
+                        title="GitHub">  
+                        <img class="picto2 picto-lg "  src="image/icon%20_githubalt_.svg"/>
+                        </a>
+                        
+                        <a href="https://www.linkedin.com/in/floriane-monnini-28b316196/" 
+                        target="_blank" 
+                        alt="LinkedIn"
+                        title="LinkedIn">
+                        <img class="picto3 picto-lg " id="picto" src="image/icon%20_linkedin_.svg"/>
+                        </a>
+                        
+                        <a 
+                        href="mailto:florianemonnini@gmail.com"
+                        alt="Mail"
+                        title="Gmail">
+                        <img class="picto4 picto-lg " src="image/icon%20_email_.svg"/>
+                        </a>
+                    </li>
+                </ul>
+            </contact>
+            
+        </footer>
+        
+
+        <script src="app.js"></script>
+            
+    </body>
+
+</html>

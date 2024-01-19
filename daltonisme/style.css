@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;800&display=swap');
+
+* {
+    /*border: 1px solid black;*/
+    text-transform: uppercase;
+    color: #454545;
+}
+
+html { 
+    background-color: #F3F2EE; 
+    scroll-behavior: smooth;
+    background-image: url(image/texture-holographique-plastique-violet-froisse-1.webp);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100% 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    overflow-x : hidden;
+    width: 100dvw;
+    
+}
+
+/*============================sections=============================*/
+
+section { 
+    height: 79dvh; 
+    width: 100dvw;
+    padding: 10dvh 20dvh 10dvh 20dvh;
+}
+
+/*==============================textes=============================*/
+
+h1, h2, h3, h4 { font-weight: 900; font-style: italic; }
+
+h1, h2, h3 { font-family: 'Merriweather', serif; }
+
+h4, p { font-family: 'Merriweather Sans', sans-serif; }
+
+h1 { font-size: 5em; text-align: center; margin-top: -3px;}
+
+h2 { font-size: 2em; letter-spacing: 0.3em; margin-top: -40px; }
+
+h3 { font-size: 1.1em; font-weight:300; letter-spacing: 0.3em; }
+
+h4 { font-size: 0.8em; }
+
+p { font-weight: 400; line-height: 150%; }
+
+/*========================bar de nav============================*/
+
+.logo { height: 4dvh; vertical-align: middle; }
+
+nav {
+    position:fixed;
+    bottom: 0;
+    width: 99dvw;
+    height: 8dvh;
+    background: rgba(243, 242, 238, 0.05);
+    border-top: 3px solid #454545; 
+    backdrop-filter: blur(10px);
+    transition: opacity 0.5s;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav a { text-decoration: none; }
+
+body.scrolled nav { background-color: #F3F2EE; opacity: 10%; }
+
+ul {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+    line-height: normal;
+    
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 93%;
+    list-style-type: none;
+    gap: 5%;
+    flex-shrink: 0;
+}
+
+li { display: flex; }
+
+.pictoDark {
+    height: 70%;
+}
+
+/*===================accueil============================*/
+
+#home {
+    height: 92dvh;
+}
+
+
+.uneGrandeBoite {
+    display: flex;
+    width: 98dvw;
+}
+
+.petiteBoiteTitle {
+    display: flex;
+    width: 15%;
+    height: 80dvh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.petiteBoite {
+    display: flex;
+    width: 15%;
+    height: 80dvh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+
+.colorOne {
+    background-color: midnightblue;
+    transition: 1s ease-in;
+}
+
+
+.colorTwo {
+    background-color: #EB4579;
+  
+}
+
+
+.title {
+    /*transition: 1s ease-in;*/
+    padding: 0 2dvh 0 2dvh;
+    margin: 0 2dvh 0 2dvh;
+}
+
+.iconeClic {
+    width: 100%;
+}
+
+.iconeEye {
+    width: 40px;
+}
+
+
+.colorThree {
+    background-color: #5D1AE8;
+  
+}
+
+
+
+.colorFor {
+    background-color: #E41AE8;
+    
+}
+
+
+/*-=====================================DALTONISM===========================================*/
+
+.sousTitre, .texte {
+    width: 80%;
+    display: flex;
+    padding: 0;
+    flex-direction: row;
+    align-items:baseline;
+    gap: 3%;
+}
+
+.grandeBoiteColor {
+    width: 80dvw;
+    margin-top: 5dvh;
+    display: flex;
+    flex-direction: row;
+    align-items:baseline;
+    justify-content: space-between;
+}
+
+.titreColor, .texteCl {
+    text-align: center;
+}
+
+.degrader {
+    
+    width: 15dvw; height: 30dvh;
+}
+
+#norm {
+    background: linear-gradient(135deg, #0FF 0%, #F0F 33.75%, #FF0 67.6%, #000 100%);
+}
+
+#deut {
+    background: linear-gradient(135deg, #D0DDFF 0%, #689BFA 33.75%, #FFFA31 67.6%, #000 100%);
+}
+
+#pro {
+    background: linear-gradient(135deg, #EDF2FF 0%, #007FFF 33.75%, #FFF400 67.6%, #000 100%);
+}
+
+#tri {
+    background: linear-gradient(135deg, #00FFFE 0%, #FF4A97 33.75%, #FFEED9 67.6%, #000 100%);
+}
+
+/*===========================================PALETTES==========================================*/
+.recherche {
+    width: 80dvw;
+    display: inline-flex;
+    padding-left: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10dvh;
+}
+
+.button {
+    display: flex;
+    padding : 0, 2dvh, 0, 0;
+    justify-content: center;
+    align-items: center;
+    gap: 1dvh;
+    border: 0;
+    background-color: rgba(243, 242, 238, 0.10);
+}
+
+.boite { width: 2dvw; height: 4dvh; }
+
+.blue { background-color: blue; }
+
+.green { background-color: green; }
+
+.yellow { background-color: yellow; }
+
+.orange { background-color: orange; }
+
+.red { background-color: red; }
+
+.white { background-color: white; border: 2px solid #454545;}
+
+.black { background-color: black; border: 2px solid white; }
+
+/*resultat recherche*/
+
+.grandeBoiteNuance{
+    width: 14dvw;
+    margin-top: 10dvh;
+    padding: 0;
+}
+
+.boiteNuance {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.boite2 { width: 3.5dvw; height: 10dvh; flex-shrink: 0; }
+
+.midnightBlue { background-color: midnightblue; }
+
+.rose { background-color: #EB4579; }
+
+.blue { background-color: #5D1AE8; }
+
+.violet { background-color: #E41AE8; }
+
+.textNuance {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*--don--*/
+
+.assos {width: 80%; margin-top: 10dvh;}
+
+/*=========================FOOTER===================================*/
+
+.footer { 
+    width: 99dvw;
+    display: flex;
+    justify-content: center;
+    height: 15dvh;
+    margin: 0 0 8dvh 0;
+}
+
+.elemContact { 
+    display: flex;
+    justify-content: center;
+    width: 100dvw; padding: 0;
+}
+
+.logo2 { width: 50px;}
+
+#tel { width: 1.5dvw;}
+
+.picto { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2dvh;
+}
+
+.picto-lg { 
+    width: 1.3dvw;
+
+}
+
+/*--version tablette--*/
+
+/*@media (max-width: 1120px)
+
+/*--version mobile--*/
+
+@media (max-width: 520px) {
+    
+section { 
+    height: 100dvh;
+    width: 100%;
+    padding: 5dvh 10dvh 5dvh 10dvh;
+    }
+    
+body { height: 100dvw; width: 100%; }
+    
+h1 { font-size: 3em;}
+
+h2 { font-size: 1.5em; letter-spacing: 0.2em; }
+
+h3 { font-size: 1em; letter-spacing: 0.2em; }
+
+h4 { font-size: 0.5em; }
+
+p { font-size: 0.5em; line-height: 80%; }
+    
+/*menu*/
+    
+nav {
+    top: 0;
+    
+}
+    
+/*==================================HOME=================================================*/
+    
+#home {
+    height: 100dvh;
+    width: 100%;
+}
+    
+
+.uneGrandeBoite {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.petiteBoite {
+    
+    width: 100%;
+    height: 15dvh;
+    }
+    
+.title {
+        
+    flex-direction: row;
+    justify-items: baseline;
+    background-image: url(image/eye-simple.svg);
+    margin: 8dvh 0 0 0;
+    padding: 2dvh 0 2dvh 0;
+    }
+    
+.description {
+    
+    height: 11.5dvh;
+    flex-direction: row;
+    justify-items: baseline;
+    background-image: url(image/eye-simple.svg);
+    padding: 0;
+    margin: 0;
+    gap: 3%;
+    }
+
+}
+
+
+/*============================MODAL=================================================*/
+.modal {
+    height: 81.5dvh;
+    position: absolute;
+    width: 14.9%;
+    background-color: #F3F2EE;
+    z-index: 1000;
+    display: none; /* La modal est cachée par défaut */
+
+  }
+  
+  .modal-show {
+    display: block; /* Affiche la modal */
+    opacity: 1;
+    transition: opacity 5s ease-in-out;
+  }

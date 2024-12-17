@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porter variable</title>
+</head>
+
+<body>
+
+    <!--JS-->
+    <script>
+        //Premier niveau
+
+        //variable global
+        let ma_var1 = "a";
+        console.log(ma_var1); //donne a
+
+        function ma_function() {
+            //Deuxieme niveau
+            console.log(ma_var1); //ne donne rien
+
+            //varaible local a la fonction
+            let ma_var2 = "b";
+            console.log(ma_var2); //donne b
+        }
+
+        ma_function(); //donne a
+        //verifie les erreurs et mettre un message perso
+        try {
+            console.log(ma_var2); //Erreur "la variable n'est pas définit"
+        } catch(erreur) {
+            console.log("error sur var2" + " " + erreur)
+        }
+
+        //test qui se verifie toujours
+        if (2 > 1) {
+            let ma_var3 = "c";
+            //!Attention! variable à haute porter
+            var ma_var4 = "d";
+        }
+
+        //verifie les erreurs et mettre un message perso
+        try {
+            console.log(ma_var3); //Erreur "la variable n'est pas définit"
+        } catch(erreur) {
+            console.log("error sur var3" + " " + erreur)
+        }
+        
+        console.log(ma_var4); //donne d
+    </script>
+
+</body>
+</html>

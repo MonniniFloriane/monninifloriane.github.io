@@ -1,0 +1,72 @@
+/*html {
+    border: 10px solid chartreuse;
+    border-radius: 5px;
+}*/
+
+:root {
+    --colorFonce :rgb(1, 18, 0);
+    --colorClair :rgb(127, 255, 0);
+}
+
+body {
+    background-color: var(--colorFonce);
+    margin: 0;
+}
+
+main {
+    position: relative;
+}
+
+.border {
+    border-bottom: 5px dashed var(--colorClair);
+}
+
+h1, h5, button {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    color: var(--colorClair);
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+.cell {
+    position: absolute;
+    /*border: 1px solid var(--colorClair);*/
+    box-sizing: border-box;
+
+    /* temporaire */
+    /*width: 30px; height: 30px;
+    left: 100px; top: 200px;*/
+}
+
+.cell.alive {
+    background-color: var(--colorClair);
+}
+
+button {
+    background-color: var(--colorClair);
+    color: var(--colorFonce);
+    border: none;
+    font-size: 1.5rem;
+}
+
+footer {
+    display: flex;
+    background-color: var(--colorClair);
+    color: var(--colorFonce);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    font-size: 1.3rem;
+
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+}

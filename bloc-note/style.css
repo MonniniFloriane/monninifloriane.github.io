@@ -1,0 +1,80 @@
+/*html {
+    border: 10px solid chartreuse;
+    border-radius: 5px;
+}*/
+
+:root {
+    --colorClair     :rgb(219, 219, 219);
+    --colorFonce     :rgb(61, 64, 83);
+
+    --colorNote      :rgb(255, 255, 112);
+    --colorNoteTwo   :rgb(112, 241, 255);
+    --colorNoteTree  :rgb(255, 160, 7);
+    --colorNoteFour  :rgb(119, 250, 119);
+    --colorNoteFive  :rgb(255, 124, 240);
+
+}
+
+body {
+    background-image: url(img/white-note-notebook.jpg);
+    margin: 0;
+    overflow: hidden;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+h1, textarea, button {
+    font-family: "Sour Gummy", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+h1 {
+    color: var(--colorFonce);
+    text-align: center;
+    font-size: 5rem;
+    margin : 0 1rem 0 0;
+}
+
+textarea {
+    background-color: transparent;
+    color: var(--colorFonce);
+    border: none;
+    min-height: 10rem; width: 10rem;
+    font-size: 1.3rem;
+    /*dimensionnement uniquement vertical*/
+    resize: vertical;
+    border-collapse: collapse;
+}
+
+.note {
+    position: absolute;
+    box-shadow: 5px 5px 0px rgba(49, 49, 49, 0.237);
+}
+
+.handle {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.113);
+}
+
+button {
+    background-color: transparent;
+
+    border-radius: 50px;
+    width: 1.5rem; height: 1.5rem;
+
+    color: var(--colorFonce);
+    border: none;
+    font-size: 1rem;
+
+    font-weight: 700;
+}
